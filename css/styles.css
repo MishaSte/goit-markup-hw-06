@@ -409,18 +409,17 @@ img {
 }
 /*          FOOTER          */
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #2e2f42;
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
-}
-
-.footer-info {
-  margin-right: 120px;
+  flex-wrap: wrap;
+  gap: 72px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -431,8 +430,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-logo-color {
   color: #f4f4fd;
@@ -443,7 +443,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
+  max-width: 288px;
 }
 
 .footer-title {
@@ -453,6 +453,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-social-list {
@@ -489,23 +490,21 @@ img {
   background-color: #31d0aa;
 }
 
-.footer-social {
-  margin-right: 80px;
-}
-
 .footer-sub-title {
   display: block;
 }
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .sub-input {
   border: 1px solid #ffffff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   outline: none;
   padding-left: 16px;
@@ -788,6 +787,36 @@ img {
   .about-item-title {
     text-align: start;
   }
+
+  /* Footer fot tablet*/
+  .footer-container {
+    gap: 72px 24px;
+    align-items: baseline;
+    justify-content: start;
+    padding-left: 108px;
+    padding-right: 164px;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-title {
+    text-align: left;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .sub-input {
+    width: 264px;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -819,5 +848,25 @@ img {
 
   .about-item-text {
     font-weight: 400;
+  }
+
+  /* Footer for desktop */
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .footer-info {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
   }
 }

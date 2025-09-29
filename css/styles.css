@@ -271,6 +271,14 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-resolution: 2x) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-bg-mob2x.jpg");
+  }
 }
 
 .hero-title {
@@ -355,6 +363,10 @@ img {
   background-color: #f4f4fd;
 }
 
+.team-container {
+  padding: 0 28px;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -372,7 +384,9 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .team-item {
@@ -509,6 +523,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /*          FOOTER          */
 .footer {
   padding-top: 96px;
@@ -913,6 +928,14 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero-bg-tab.jpg");
+
+    @media screen and (min-resolution: 2x) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg-tab2x.jpg");
+    }
   }
 
   .hero-title {
@@ -936,6 +959,16 @@ img {
 
   .about-item-title {
     text-align: start;
+  }
+
+  /* Tablet TEAM */
+
+  .team-container {
+    padding: 0 108px;
+  }
+
+  .team-list {
+    gap: 64px 24px;
   }
 
   /* Footer fot tablet*/
@@ -1019,6 +1052,13 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero-bg.jpg");
+    @media screen and (min-resolution: 2x) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg2x.jpg");
+    }
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1047,6 +1087,17 @@ img {
 
   .about-item-text {
     font-weight: 400;
+  }
+
+  /* Desktop Team */
+
+  .team-container {
+    padding: 0;
+  }
+
+  .about-list {
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 
   /* Footer for desktop */

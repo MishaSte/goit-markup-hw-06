@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
@@ -85,7 +85,7 @@ img {
 }
 
 .header-menu-link.current::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
@@ -101,7 +101,7 @@ img {
 }
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -267,7 +267,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-bg-mob.jpg");
+    url('../images/hero-bg-mob.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -277,7 +277,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg-mob2x.jpg");
+      url('../images/hero-bg-mob2x.jpg');
   }
 }
 
@@ -446,7 +446,6 @@ img {
 
 .portfolio-list {
   display: flex;
-  column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
 }
@@ -454,6 +453,11 @@ img {
 .portfolio-img-box {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
 }
 
 .overlay-text {
@@ -541,7 +545,7 @@ img {
 }
 
 .footer-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -927,14 +931,14 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg-tab.jpg");
+      url('../images/hero-bg-tab.jpg');
 
     @media screen and (min-resolution: 2x) {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/hero-bg-tab2x.jpg");
+        url('../images/hero-bg-tab2x.jpg');
     }
   }
 
@@ -969,6 +973,12 @@ img {
 
   .team-list {
     gap: 64px 24px;
+  }
+
+  /* Tablet PORTFOLIO  */
+
+  .portfolio-list {
+    gap: 72px 24px;
   }
 
   /* Footer fot tablet*/
@@ -1051,13 +1061,13 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg.jpg");
+      url('../images/hero-bg.jpg');
     @media screen and (min-resolution: 2x) {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/hero-bg2x.jpg");
+        url('../images/hero-bg2x.jpg');
     }
   }
   .hero-title {
@@ -1098,6 +1108,12 @@ img {
   .about-list {
     flex-wrap: nowrap;
     gap: 24px;
+  }
+
+  /* Desktop PORTFOLIO */
+
+  .portfolio-list {
+    gap: 48px 24px;
   }
 
   /* Footer for desktop */
